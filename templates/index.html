@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Countdown</title>
+    <style>
+        body {
+            background-image: url("{{ background_image_url }}");
+            background-position: center;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Days left until New Year: {{ days_left }}</h1>
+        <h2>Motivational Quote</h2>
+        <p>{{ quote }}</p>
+    </div>
+</body>
+</html>
+
